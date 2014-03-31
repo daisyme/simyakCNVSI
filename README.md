@@ -51,6 +51,6 @@ The TE calls are in the TEcalls directories.  The file formats are based on the 
 <li>Annotation information</li>
 <li>shared or novel>
 
-The second and third column represent the range of possible insert site postions.  Column 4 is a crude attempt at annotating what the TE is.  (Note that the annotation scheme differs from Cridand et al. doi: 10.1093/molbev/mst129.  Further, our purpose in the paper was to define presence/absence and thus we ingore the annotation information for our own analyses.  The issue of accurate TE annotation of the reference genomes needs to be addressed in the future in order to improve the annotation of TE presence/absence polymorphism.)
+The second and third column represent the range of possible insert site postions.  These positions are zero-offset (e.g., position 1 on each chromosome is 0). Column 4 is a crude attempt at annotating what the TE is.  (Note that the annotation scheme differs from Cridand et al. doi: 10.1093/molbev/mst129.  Further, our purpose in the paper was to define presence/absence and thus we ingore the annotation information for our own analyses.  The issue of accurate TE annotation of the reference genomes needs to be addressed in the future in order to improve the annotation of TE presence/absence polymorphism.)
 
 The final column simply records whether or not the TE is found in the relevant reference genome sequence or not.
