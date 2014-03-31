@@ -21,7 +21,7 @@ DyakTandemDups.bed
 Format:
 chrom start stop identifier freqency
 
-
+##CNV calls
 Raw data calls prior to all filtering (including ancestral duplications, reference duplications, and divergent reads spanning more than 25kb) are in
 RawCallsByLineSim/\*.div.cov3.mm2.rearr
 RawCallsByLineYak/\*.div.cov3.mm2.rearr
@@ -39,3 +39,18 @@ The format of these files is 10 columns:
 <li>stop2 = Stop position of second read cluster.</li> 
 <li>reads = Pipe-separated (the pipe is the | character) list of the read pairs supporting the event.  Format is readPairName;start,stop,strand,start,stop,strand, where the last two values are for the two reads in the pair.</li>
 </ol>
+
+##Transposable element (TE) calls
+
+The TE calls are in the TEcalls directories.  The file formats are based on the line number used in the paper.  Thus, there are 20 files per species.  The format is the following:
+
+<ol>
+<li>Chromsosome</li>
+<li>Insert site position 1</li>
+<li>Insert site position 2</li>
+<li>Annotation information</li>
+<li>shared or novel>
+
+The second and third column represent the range of possible insert site postions.  Column 4 is a crude attempt at annotating what the TE is.  (Note that the annotation scheme differs from Cridand et al. doi: 10.1093/molbev/mst129.  Further, our purpose in the paper was to define presence/absence and thus we ingore the annotation information for our own analyses.  The issue of accurate TE annotation of the reference genomes needs to be addressed in the future in order to improve the annotation of TE presence/absence polymorphism.)
+
+The final column simply records whether or not the TE is found in the relevant reference genome sequence or not.
