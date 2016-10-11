@@ -33,7 +33,7 @@ The format of these files is 10 columns:
 <li>coverage = Number of read pairs supporting the event</li>
 <li>strand1 = Strand of first read cluster.  0 = plus, 1 = minus</li>
 <li>start1 = Start position of first read cluster.</li>
-<li>stop1 = Stop position of second read cluster.</li>
+<li>stop1 = Stop position of first read cluster.</li>
 <li>chrom2 = Chromosome number in reference where the second read cluster is</li>
 <li>start2 = Start position of second read cluster.</li>  
 <li>stop2 = Stop position of second read cluster.</li> 
